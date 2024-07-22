@@ -1,27 +1,22 @@
-# Qadence-ODE-Solver
+# Quantum-ODE-Solver
 
-This repository contains a Jupyter notebook for optimizing hyperparameters using Bayesian optimization with the Tree-structured Parzen Estimator (TPE) algorithm. The notebook demonstrates how to use the `hyperopt` library to efficiently search for optimal hyperparameters for a machine learning model.
+This repository contains a notebook that solves any ordinary differential equation using quantum algorithms and ML. It uses the `qadence` library to create quantum circuits and perform multiple measurements quickly. The notebook utilizes the `hyperopt` library to efficiently search for optimal hyperparameters for a machine learning model.
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Installation](#installation)
 - [Usage](#usage)
-- [Code Explanation](#code-explanation)
 - [References](#references)
 
 ## Introduction
-In this project, we use the `hyperopt` library to perform hyperparameter optimization for a hypothetical machine learning model. The optimization process leverages the TPE algorithm, which is particularly effective in handling high-dimensional hyperparameter spaces.
+In this project, we used Chebyshev feature maps to encode the values and calculated derivatives using the parameter shift rule, implemented with an automatic differentiation technique. We convert the ODE into an optimization problem, finding the best parameters and hyperparameters using ML models. We employ stochastic gradient descent to optimize parameters, and the `hyperopt` library for hyperparameter optimization of a quantum machine learning model. The optimization process leverages the TPE algorithm, effective in handling high-dimensional hyperparameter spaces.
 
-## Installation
-To run the notebook, you need to have the following dependencies installed:
-- Python 3.x
-- Jupyter Notebook
-- `hyperopt` library
-- `numpy` library
+## Usage
 
-You can install the required libraries using the following commands:
+This tool can solve any ODE and can be extended to solve partial differential equations and multi-dimensional ODEs.
 
-```bash
-pip install jupyter
-pip install hyperopt
-pip install numpy
+## References
+
+1. Oleksandr Kyriienko, Annie E. Paine and Vincent E. Elfving (2021). Solving nonlinear differential equations with differentiable quantum circuits. [
+https://doi.org/10.48550/arXiv.2011.10395](https://arxiv.org/pdf/2011.10395)
+
+
